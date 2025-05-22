@@ -25,5 +25,8 @@ public:
 int main() {
   Base *Var = new Derived();
   delete Var;
+
+  Derived* var2 = new Derived();
+  delete var2;
   return 0;
 }
