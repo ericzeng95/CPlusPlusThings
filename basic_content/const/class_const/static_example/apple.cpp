@@ -6,10 +6,15 @@ int Apple::ap = 666;
 Apple::Apple(int i) {}
 int Apple::add(int num) {
   take(num);
+  ap = 2;
+  Apple::ap = 100;
+  std::cout << "changed static to " << ap << std::endl;
   return 0;
 }
 int Apple::add(int num) const {
   take(num);
+  Apple::ap = 900;
+  std::cout << "changed static to " << ap << std::endl;
   return 0;
 }
 void Apple::take(int num) const {
