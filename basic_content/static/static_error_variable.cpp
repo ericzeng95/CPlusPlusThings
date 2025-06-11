@@ -12,7 +12,10 @@ public:
   };
 };
 
+int Apple::i = 1;
+
 int main() {
+
   Apple obj1;
   Apple obj2;
   obj1.i = 2;
