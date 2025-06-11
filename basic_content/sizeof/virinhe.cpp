@@ -16,10 +16,18 @@ class A {
 
 class B {
   virtual void fun2() {}
+  virtual void fun3() {}
 };
-class C : virtual public A, virtual public B {
+
+class D {
+  virtual void fun8() {}
+  virtual void fun9() {}
+};
+
+class C : virtual public A, virtual public B, virtual public D {
 public:
   virtual void fun3() {}
+  virtual void fun4() {}
 };
 
 int main() {
