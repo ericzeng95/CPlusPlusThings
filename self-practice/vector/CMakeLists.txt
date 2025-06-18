@@ -13,6 +13,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 # Include directories for your project
+include_directories(${CMAKE_SOURCE_DIR})
 
 # Source files for the vector library
 add_library(myvector STATIC
