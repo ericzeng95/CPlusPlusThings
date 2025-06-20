@@ -7,3 +7,4 @@ bazel-cplusplus_bazel
 .vscode
 
 **/CMakeFiles/
+**/build

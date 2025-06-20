@@ -17,12 +17,12 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 # Source files for the vector library
 add_library(myvector STATIC
-    vector.cpp
+    myvector.cpp
 )
 
 # Test executable
 add_executable(vector_tests
-    vector.t.cpp
+    myvector.t.cpp
 )
 
 # Link test executable with myvector library and Google Test
